@@ -80,6 +80,7 @@ main {
     margin: auto;
     padding: 30px, 0px;
     color: var(--mid);
+    font-size: 1.3rem;
 }
 
 .img-about-me {
@@ -101,7 +102,10 @@ main h2 {
 
 #portfolio {
     margin-top: 30px;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portfolio-title > p {
@@ -110,12 +114,35 @@ main h2 {
 }
 
 .portfolio-items {
-    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
     width: 900px;
     gap: 16px;
+    color: black;
+} 
+
+.big-img {
+    width: 98.25%;
+    border-radius: 12px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
+.small-img {
+    width: 49%;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.big-img:hover {
+    transform: scale(95%); 
+}
+
+.small-img:hover {
+    transform: scale(95%);
+}
+
+@media screen and (max-width: 1000px) {
     .button {
         display: flex;
     }
@@ -134,5 +161,18 @@ main h2 {
     /* once I learn JavaScript I'm going to make this part a clickable dropdown*/
     nav.active {
         display: flex;
+    }
+    #portfolio {
+        width: 100%;
+        flex-direction: column;
+    }
+    .portfolio-items {
+        flex-direction: column;
+    }
+    .big-img {
+        flex-direction: column;
+    }
+    .small-img {
+        flex-direction: column;
     }
 }
