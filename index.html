@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/4268e3dc68.js" crossorigin="anonymous"></script>
     <title>Camille Ramos</title>
 </head>
 <body>
         <nav>
             <h1>Welcome to my portfolio!</h1>
+            <!-- this area is responsive, and will later be used as a drop down menu -->
             <a href="#" class="button">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </a>
+            <!-- navbar links that scroll to specific parts of site -->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
     <main>
@@ -28,6 +31,8 @@
             <h2>Hi, I'm Camille.</h2>
             <p>I'm currently a student at the University of Utah learning full stack web development.</p>
             <p>I am brand new to coding and this is my first time making a portfolio.</p>
+            <!-- icons I will later link to my personal pages -->
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/camilleramos1"><i class="fa-brands fa-square-github"></i></a>
         </section>
         <section id="portfolio">
             <div class="portfolio-title">
@@ -36,25 +41,41 @@
             </div>
             <div class="portfolio-items">
                 <!--  portfolio item 1  -->
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/portfolio-box.jpg" alt="colorful wave" class="big-img"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div class="big-img"><h3>Placeholder 1</h3></div></a>
                 <!-- portfolio items 2-5 -->
                 <div class="columns">
                     <div class="small-column">
-                        <a href="https://www.coolmathgames.com/"><img src="assets/portfolio-box.jpg" alt="colorful wave" class="small-img"></a>
-                        <a href="https://www.youtube.com/"><img src="assets/portfolio-box.jpg" alt="colorful wave" class="small-img"></a>
+                        <a class="placeholder" href="https://www.coolmathgames.com/"><div class="small-img"><p>Placeholder 2</p></div></a>
+                        <a class="placeholder" href="https://www.youtube.com/"><div class="small-img"><p>Placeholder 3</p></div></a>
                     </div>
                     <div class="small-column">
-                        <a href="https://www.facebook.com/"><img src="assets/portfolio-box.jpg" alt="colorful wave" class="small-img"></a> 
-                        <a href="https://www.google.com/"><img src="assets/portfolio-box.jpg" alt="colorful wave" class="small-img"></a>
+                        <a class="placeholder" href="https://www.facebook.com/"><div class="small-img"><p>Placeholder 4</p></div></a>
+                        <a class="placeholder" href="https://www.google.com/"><div class="small-img"><p>Placeholder 5</p></div></a>
                     </div>
                 </div>
             </div>
+            <!-- I tried doing all of the above sections without so many divs but it ruined my formatting every time -->
         </section>
     </main>
-    <aside>
-    </aside>
-    <footer>
+    <section id="contact-me" class="container">
+        <h3>Contact Me</h3>
+        <!-- I got part of this code from w3 schools, I credited it in my readme file -->
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
         
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <!-- I will update these placeholders in the future when I am seeking employment -->
+    <footer> 
+        <p>Email | Phone Number | Location</p>
     </footer> 
 </body>
 </html>

@@ -5,12 +5,12 @@
     font-family: 'Georgia', 'serif', sans-serif;
     text-align: center;
 }
-
+/* color selectors */
 :root {
     --light: #fffff4;
     --mid: #EEC09B;
     --dark: #BA8C66;
-    --light2: #FFEDD1;
+    --light2: #ffdbd1;
 }
 
 body {
@@ -75,6 +75,7 @@ nav ul li:hover {
 main {
     padding: 25px;
 }
+/* about me section */
 #about-me {
     width: 80%;
     margin: auto;
@@ -87,12 +88,20 @@ main {
     border-radius: 50%;
     margin: auto;
     display: block;
+    border: solid var(--mid);
 }
 
 main h2 {
     color: var(--dark);
 }
 
+.fa-brands {
+    font-size: 2rem;
+    padding: 5px;
+    color: var(--mid);
+}
+
+/* portfolio section */
 .portfolio-title {
     font-size: 2rem;
     padding: 20px;
@@ -115,23 +124,55 @@ main h2 {
 .portfolio-items {
     position: relative;
     text-align: center;
-    width: 900px;
-    gap: 16px;
+    width: 905px;
+}
+
+.portfolio-items > a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+
+.placeholder {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+/* used background imgs instead of img tags so i could add text on top */
+.big-img {
+    background-image: url("portfolio.1.png");
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 .columns {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
-.big-img {
-    width: 98.25%;
-    border-radius: 12px;
+.small-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
 }
 
 .small-img {
-    width: 49%;
+    background-image: url("portfolio-box.jpg");
+    display: flex;
     border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 450px;
+    height: 175px;
 }
 
 .big-img:hover {
@@ -142,6 +183,49 @@ main h2 {
     transform: scale(95%);
 }
 
+/* contact submission form */
+.container {
+    border-radius: 5px;
+    background-color: var(--light2);
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.container h3 {
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--mid);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--dark);
+  }
+
+  footer {
+    color: var(--dark);
+    padding: 10px;
+  }
+/* added media section so site is responsive to smaller displays */
 @media screen and (max-width: 1000px) {
     .button {
         display: flex;
@@ -169,11 +253,14 @@ main h2 {
     .portfolio-items {
         flex-direction: column;
         width: auto;
+        height: 50%;
     }
     .big-img {
         flex-direction: column;
+        width: auto;
     }
     .small-img {
         flex-direction: column;
+        width: auto;
     }
 }
