@@ -109,7 +109,7 @@ main h2 {
 
 .portfolio-title > p {
     font-size: 1.5rem;
-    color: var(--mid)
+    color: var(--mid);
 }
 
 .portfolio-items {
@@ -117,11 +117,11 @@ main h2 {
     text-align: center;
     width: 900px;
     gap: 16px;
-    color: black;
-} 
+}
 
 .columns {
     display: flex;
+    flex-direction: column;
 }
 
 .big-img {
@@ -168,6 +168,7 @@ main h2 {
     }
     .portfolio-items {
         flex-direction: column;
+        width: auto;
     }
     .big-img {
         flex-direction: column;
