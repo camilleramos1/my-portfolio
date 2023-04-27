@@ -7,7 +7,7 @@ I have included an about me section, links to projects, and a contact submission
 
 ## Link to Live Site
 
-* Insert Screenshot after website is complete *
+![image](https://user-images.githubusercontent.com/129894673/234730109-25d461e1-335d-4a28-a5fc-faed41cdf344.png)
 
 Below is a link to my portfolio:
 
