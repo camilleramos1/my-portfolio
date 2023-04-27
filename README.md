@@ -11,7 +11,7 @@ I have included an about me section, links to projects, and a contact submission
 
 Below is a link to my portfolio:
 
-** Insert link here **
+https://camilleramos1.github.io/my-portfolio/
 
 ## IMPORTANT NOTE:
 
