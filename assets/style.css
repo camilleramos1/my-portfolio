@@ -140,7 +140,7 @@ main h2 {
 }
 /* used background imgs instead of img tags so i could add text on top */
 .big-img {
-    background-image: url("portfolio.1.png");
+    background-image: url("updatedScreenshot\ of\ project1.png");
     display: flex;
     gap: 20px;
     width: 100%;
